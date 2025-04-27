@@ -46,15 +46,15 @@ const SignupPage = () => {
         className="w-20 h-20 object-cover absolute right-40 top-1/4 transform -translate-y-1/2"
       />
 
-      {/* Kid image at right middle */}
-      <motion.img
-        src={kidImg}
-        alt="Kid"
-        initial={{ x: 300, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="w-64 h-64 object-cover absolute right-10 top-1/2 transform -translate-y-1/2"
-      />
+	  {/* Kid Image */}
+	       <motion.img
+	         src={kidImg}
+	         alt="Kid"
+	         initial={{ x: 300, opacity: 0 }}
+	         animate={{ x: 0, opacity: 1 }}
+	         transition={{ duration: 1 }}
+	         className="w-64 h-64 absolute right-10 top-1/2 transform -translate-y-1/2"
+	       />
 
       {/* Signup Form */}
       <motion.form
