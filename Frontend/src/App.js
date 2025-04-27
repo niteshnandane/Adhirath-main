@@ -1,21 +1,20 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginPage from "./components/LoginPage";
-import SignUpPage from "./components/SignUpPage";
-import "./App.css";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import LoginPage from './components/LoginPage';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          {/* Route for LoginPage */}
-          <Route path="/" element={<LoginPage />} />
-          {/* Route for SignUpPage */}
-          <Route path="/signup" element={<SignUpPage />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<SignupPage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
