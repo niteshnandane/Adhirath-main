@@ -16,7 +16,9 @@ public class ContentController {
 
         @GetMapping("/login")
         public String login(){
-            return "login";
+            return "redirect:/login";
+
+
 
         }
 

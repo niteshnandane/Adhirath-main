@@ -23,7 +23,7 @@ public class SecurityConfig {
 
 
                 .authorizeHttpRequests(registry ->{
-                    registry.requestMatchers("/req/singup", "/css/**").permitAll();
+                    registry.requestMatchers("/req/singup", "/css/**", "/js/**").permitAll();
                     registry.anyRequest().authenticated();
                 })
                 .build();
